@@ -9,7 +9,7 @@ const gameBoard = document.getElementById('game-board')
 
 function main(currentTime) {
     if (gameOver) {
-        if (confirm('Loser.\nPress OK to try again.')) {
+        if (confirm('Game Over.\nPress OK to play again.')) {
             window.location = '/'
         }
     return
