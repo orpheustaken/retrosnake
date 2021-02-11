@@ -7,8 +7,11 @@ let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
+var dead = new Audio('sound/gameover.mp3');
+
 function main(currentTime) {
     if (gameOver) {
+        dead.play();
         if (confirm('Game Over.\nPress OK to play again.')) {
             window.location = '/'
         }
