@@ -8,6 +8,7 @@ let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
 var dead = new Audio('sound/gameover.mp3');
+dead.volume = 0.1;
 
 function main(currentTime) {
     if (gameOver) {

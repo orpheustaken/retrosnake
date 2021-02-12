@@ -2,6 +2,7 @@ let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
 var move = new Audio('sound/movement.mp3');
+move.volume = 0.1;
 
 window.addEventListener('keydown', e => {
     switch (e.key) {

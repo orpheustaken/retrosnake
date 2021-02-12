@@ -4,42 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Retro Snake</title>
 </head>
-
-<style>
-    body {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        background-color: black;
-        background-image: url('img/retro.jpg')
-    }
-    #game-board {
-        opacity: 0.6;
-        background-color: black;
-        width: 100vmin;
-        height: 100vmin;
-        display: grid;
-        grid-template-rows: repeat(21, 1Fr);
-        grid-template-columns: repeat(21, 1Fr);
-    }
-    .snake {
-        background-color: white;
-        border: .50vmin solid black; 
-    }
-    .food {
-        background-color: #700070;
-        border: .50vmin solid black;
-    }
-</style>
 
 <script src="game.js" defer type="module"></script>
 
 <body>
-    <div id="game-board"></div>
+    <header>
+        <div class="logo-container">
+            <img src="/img/logo.svg" alt="logo">
+        </div>
+    </header>
+    <main>
+        <div id="game-board"></div>
+    </main>
 </body>
 </html>

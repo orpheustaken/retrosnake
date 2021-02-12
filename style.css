@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    background-image: url('img/retro.jpg')
+}
+header {
+    display: flex;
+    width: min-content;
+    margin: auto;
+    height: 16vh;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+main {
+    display: flex;
+}
+#game-board {
+    opacity: 0.7;
+    background-color: black;
+    width: 75vmin;
+    height: 75vmin;
+    display: grid;
+    margin: auto;
+    grid-template-rows: repeat(26, 1Fr);
+    grid-template-columns: repeat(26, 1Fr);
+}
+.logo-container {
+    /* opacity: 0.6; */
+    /* background-color: purple; */
+    flex: 1;
+    display: flex;
+}
+.snake {
+    background-color: white;
+    border: .50vmin solid black; 
+}
+.food {
+    background-color: #700070;
+    border: .50vmin solid black;
+}
