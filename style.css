@@ -4,9 +4,9 @@ body {
 }
 header {
     display: flex;
-    width: min-content;
+    min-width: min-content;
     margin: auto;
-    height: 16vh;
+    min-height: 20vh;
     align-items: center;
     text-align: center;
     align-content: center;
@@ -17,24 +17,28 @@ main {
 #game-board {
     opacity: 0.7;
     background-color: black;
-    width: 75vmin;
-    height: 75vmin;
+    width: 76vmin;
+    height: 76vmin;
     display: grid;
     margin: auto;
     grid-template-rows: repeat(26, 1Fr);
     grid-template-columns: repeat(26, 1Fr);
 }
 .logo-container {
-    /* opacity: 0.6; */
-    /* background-color: purple; */
     flex: 1;
-    display: flex;
+}
+.logo-container img {
+    height: 7vh;
+}
+.logo {
+    color: white;
+    font-size: medium;
 }
 .snake {
     background-color: white;
     border: .50vmin solid black; 
 }
 .food {
-    background-color: #700070;
+    background-color: #800080;
     border: .50vmin solid black;
 }
