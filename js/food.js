@@ -1,7 +1,7 @@
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
 
-var eat = new Audio('sound/eat.mp3');
+var eat = new Audio('/assets/sound/eat.mp3');
 eat.volume = 0.1;
 
 let food = getRandomFoodPosition()

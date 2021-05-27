@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url('img/retro.jpg')
+    background-image: url('/assets/img/retro.jpg')
 }
 header {
     display: flex;
