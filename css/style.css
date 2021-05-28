@@ -32,7 +32,7 @@ main {
 }
 .logo {
     color: white;
-    font-size: medium;
+    font-size: larger;
 }
 .snake {
     background-color: white;
