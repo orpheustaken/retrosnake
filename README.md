@@ -6,8 +6,7 @@ Retro Snake is my version of the classic snake game, remade with JavaScript to r
 
 ![retro_snake](https://user-images.githubusercontent.com/63078965/117844858-8eb0d680-b26f-11eb-9b27-dc69902f8b1a.png)
 
-![retro_snake](https://user-images.githubusercontent.com/63078965/120717663-78391c00-c4b7-11eb-885c-bbc5dff971bc.gif)
-
+![retro_snake](https://user-images.githubusercontent.com/63078965/120717836-be8e7b00-c4b7-11eb-991f-79c6f89ddffb.gif)
 
 ## Usage and Hosting
 
