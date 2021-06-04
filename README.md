@@ -1,7 +1,11 @@
 ![logo_retrosnake2](https://user-images.githubusercontent.com/63078965/120733941-957de280-c4d7-11eb-98a4-d0ba1e1a75dc.png)
 
 #### Retro Snake is my version of the classic snake game remade with JavaScript to run in browsers.
----
+<br/>
+
+## Gameplay
+This is a really small project, only the arrow keys are necessary to play the game. Simple sound effects were added and more complex features are still to be commited.
+
 ![retro_snake](https://user-images.githubusercontent.com/63078965/120719880-948a8800-c4ba-11eb-850e-578cfcbb64bf.gif)
 
 ## Artwork
