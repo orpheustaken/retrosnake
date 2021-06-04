@@ -1,4 +1,4 @@
-![logo_retrosnake](https://user-images.githubusercontent.com/63078965/120733496-d3c6d200-c4d6-11eb-911f-307a556bb221.png)
+![logo_retrosnake2](https://user-images.githubusercontent.com/63078965/120733941-957de280-c4d7-11eb-98a4-d0ba1e1a75dc.png)
 
 #### Retro Snake is my version of the classic snake game remade with JavaScript to run in browsers.
 ---
