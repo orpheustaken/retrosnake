@@ -3,8 +3,6 @@
 ## Gameplay
 This is a minor project, only the arrow keys are necessary to play the game. Simple sound effects were added and more complex features are still to be commited.
 
-![retro_snake](https://user-images.githubusercontent.com/63078965/120719880-948a8800-c4ba-11eb-850e-578cfcbb64bf.gif)
-
 ## Artwork
 Its logo was designed on Inkscape and inspired by the retro and pixelated style of the old arcades. The background photo was taken by [Ben Neale](https://unsplash.com/@ben_neale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), and can be found on [Unsplash](https://unsplash.com/photos/zpxKdH_xNSI).
 
