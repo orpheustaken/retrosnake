@@ -33,6 +33,7 @@ main {
 }
 .logo {
     color: white;
+    font-size: 1.1rem;
     text-shadow: 0.7px 0.7px 1px #e000e0;
 }
 .snake {
