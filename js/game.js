@@ -12,8 +12,9 @@ dead.volume = vol
 
 function main(currentTime) {
     if (gameOver) {
-        dead.play();
-        if (confirm('Game Over.\nPress OK to play again.')) {
+        dead.play()
+        alert("GAME OVER")
+        if (confirm('Do you want to play again?')) {
             window.location = '/'
         }
     return

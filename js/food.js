@@ -11,7 +11,7 @@ const EXPANSION_RATE = 1
 export function update() {
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE)
-        eat.play();
+        eat.play()
         food = getRandomFoodPosition()
     }
 }
