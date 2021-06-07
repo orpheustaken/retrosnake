@@ -1,8 +1,10 @@
+import { vol } from './game.js'
+
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
-var move = new Audio('/assets/sound/movement.mp3');
-move.volume = 0.1;
+const move = new Audio('/assets/sound/movement.mp3')
+move.volume = vol
 
 window.addEventListener('keydown', e => {
     switch (e.key) {

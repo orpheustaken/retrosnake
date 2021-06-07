@@ -2,13 +2,14 @@ import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, sn
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
 
+export const vol = 0.2
 
 let lastRenderTime = 0
 let gameOver = false
-const gameBoard = document.getElementById('game-board')
 
-var dead = new Audio('/assets/sound/gameover.mp3');
-dead.volume = 0.1;
+const gameBoard = document.getElementById('game-board')
+const dead = new Audio('/assets/sound/gameover.mp3')
+dead.volume = vol
 
 function main(currentTime) {
     if (gameOver) {

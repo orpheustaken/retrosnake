@@ -1,8 +1,9 @@
+import { vol } from './game.js'
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
 
-var eat = new Audio('/assets/sound/eat.mp3');
-eat.volume = 0.1;
+const eat = new Audio('/assets/sound/eat.mp3')
+eat.volume = vol
 
 let food = getRandomFoodPosition()
 const EXPANSION_RATE = 1
