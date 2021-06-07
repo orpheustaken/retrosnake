@@ -1,6 +1,7 @@
 import { getInputDirection } from "./input.js"
+import { game_speed as speed } from './settings.js'
 
-export const SNAKE_SPEED = 15
+export const SNAKE_SPEED = speed
 const snakeBody = [
     { x: 13, y: 13 }
 ]

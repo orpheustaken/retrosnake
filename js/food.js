@@ -1,6 +1,6 @@
-import { vol } from './game.js'
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
+import { vol } from './settings.js'
 
 const eat = new Audio('/assets/sound/eat.mp3')
 eat.volume = vol
