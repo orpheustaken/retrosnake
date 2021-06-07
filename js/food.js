@@ -1,6 +1,7 @@
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
 import { vol } from './settings.js'
+import { recordScore } from './score.js'
 
 const eat = new Audio('/assets/sound/eat.mp3')
 eat.volume = vol
@@ -13,6 +14,7 @@ export function update() {
         expandSnake(EXPANSION_RATE)
         eat.play()
         food = getRandomFoodPosition()
+        recordScore()
     }
 }
 export function draw(gameBoard) {
