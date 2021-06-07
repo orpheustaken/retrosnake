@@ -41,5 +41,6 @@ main {
 }
 .food {
     background-color: #800080;
-    border: .50vmin solid black;
+    border: .60vmin solid black;
+    border-radius: 10ch;
 }
