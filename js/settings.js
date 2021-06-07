@@ -1,2 +1,2 @@
 export const vol = 0.5
-export const game_speed = 20
+export const game_speed = 15
