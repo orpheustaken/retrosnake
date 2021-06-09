@@ -16,7 +16,7 @@ main {
     display: flex;
 }
 #game-board {
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: black;
     width: 76vmin;
     height: 76vmin;
@@ -36,12 +36,16 @@ main {
     font-size: 1.8vh;
     text-shadow: 0.7px 0.7px 1px #e000e0;
 }
+.snakeHead {
+    background-color: #e000e0;
+    border: .50vmin solid black;
+}
 .snake {
-    background-color: white;
+    background-color: #800080;
     border: .50vmin solid black; 
 }
 .food {
-    background-color: #800080;
+    background-color: #e000e0;
     border: .60vmin solid black;
     border-radius: 10ch;
 }

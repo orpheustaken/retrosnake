@@ -25,6 +25,11 @@ export function draw(gameBoard) {
         snakeElement.classList.add('snake')
         gameBoard.appendChild(snakeElement)
     })
+    const snakeHeadElement = document.createElement('div')
+    snakeHeadElement.style.gridRowStart = snakeBody[0].y
+    snakeHeadElement.style.gridColumnStart = snakeBody[0].x
+    snakeHeadElement.classList.add('snakeHead')
+    gameBoard.appendChild(snakeHeadElement)
 }
 
 export function expandSnake(amount) {
