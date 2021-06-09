@@ -6,7 +6,7 @@ This is a minor project, only the arrow keys are necessary to play the game. Sim
 ## Artwork
 Its logo was designed on Inkscape and inspired by the retro and pixelated style of the old arcades. The background photo was taken by [Ben Neale](https://unsplash.com/@ben_neale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), and can be found on [Unsplash](https://unsplash.com/photos/zpxKdH_xNSI).
 
-![retro_snake](https://user-images.githubusercontent.com/63078965/117844858-8eb0d680-b26f-11eb-9b27-dc69902f8b1a.png)
+![retro_snake4](https://user-images.githubusercontent.com/63078965/121284599-a611cc80-c8cc-11eb-9c76-f52b061de5b3.png)
 
 ## Usage and Hosting
 There is no server hosting this game, therefore, to play it you need to clone this repository and host locally.
