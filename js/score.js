@@ -1,5 +1,5 @@
 let score = 0
-export let record = Number(localStorage.getItem('record'))
+let record = Number(localStorage.getItem('record'))
 
 export function updateScore() {
     score++
@@ -25,6 +25,10 @@ export function updateRecord() {
 
 export function resetRecord() {
     localStorage.removeItem('record')
+}
+
+export function getRecord() {
+    return record
 }
 
 function newRecord() {
