@@ -2,7 +2,7 @@ import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, sn
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
 import { vol } from './settings.js'
-import { resetScore } from './score.js'
+import { updateRecord, resetRecord, record } from './score.js'
 
 let lastRenderTime = 0
 let gameOver = false
@@ -14,8 +14,13 @@ dead.volume = vol
 function main(currentTime) {
     if (gameOver) {
         dead.play()
-        resetScore()
+        updateRecord()
         alert("GAME OVER")
+        if (record != 0) {
+            if (confirm('Do you want to reset your records?')) {
+                resetRecord()
+            }
+        }
         if (confirm('Do you want to play again?')) {
             window.location = '/'
         }
