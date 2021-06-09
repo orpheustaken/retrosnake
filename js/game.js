@@ -11,10 +11,11 @@ const gameBoard = document.getElementById('game-board')
 const dead = new Audio('/assets/sound/gameover.mp3')
 dead.volume = vol
 
-function main(currentTime) {
+async function main(currentTime) {
     if (gameOver) {
         dead.play()
         updateRecord()
+        await sleep(500)
         alert("GAME OVER")
         if (getRecord != 0) {
             if (confirm('Do you want to reset your records?')) {
@@ -52,4 +53,8 @@ function draw() {
 
 function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
