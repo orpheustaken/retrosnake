@@ -18,7 +18,7 @@ async function main(currentTime) {
         await sleep(500)
         alert("GAME OVER")
         if (getRecord != 0) {
-            if (confirm('Do you want to reset your records?')) {
+            if (!confirm('Keep your records?')) {
                 resetRecord()
             }
         }
