@@ -2,7 +2,7 @@ import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, sn
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
 import { vol } from './settings.js'
-import { updateRecord, resetRecord, getRecord } from './score.js'
+import { updateRecord, resetRecord, getRecord, htmlScore } from './score.js'
 
 let lastRenderTime = 0
 let gameOver = false
@@ -36,6 +36,7 @@ async function main(currentTime) {
 
     update()
     draw()
+    htmlScore()
 }
 
 window.requestAnimationFrame(main)

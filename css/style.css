@@ -2,6 +2,7 @@ body {
     background-color: black;
     background-image: url('/assets/img/retro.jpg');
     font-family: hack;
+    color: white;
 }
 header, footer {
     display: flex;
@@ -35,7 +36,6 @@ footer {
     height: 7vh;
 }
 .title {
-    color: white;
     font-size: 1.8vh;
     text-shadow: 0.7px 0.7px 1px #e000e0;
 }
@@ -60,6 +60,12 @@ footer {
     font-size: 1.7vh;
     text-shadow: 0.7px 0.7px 1px #e000e0;
     text-decoration: none;
+}
+.score, .record {
+    font-size: 2vh;
+    text-shadow: 0.7px 0.7px 1px #e000e0;
+    display: block;
+    margin: auto;
 }
 a:hover {
     color: hotpink;

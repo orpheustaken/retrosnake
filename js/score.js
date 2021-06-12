@@ -31,6 +31,11 @@ export function getRecord() {
     return record
 }
 
+export function htmlScore() {
+    document.getElementById('score').innerHTML = score
+    document.getElementById('record').innerHTML = record
+}
+
 function newRecord() {
     localStorage.setItem('record', score)
     record = Number(localStorage.getItem('record'))
