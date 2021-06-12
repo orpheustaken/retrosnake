@@ -1,8 +1,10 @@
 let score = 0
-let record = Number(localStorage.getItem('record'))
+let formatScore = ('0' + 0).slice(-2)
+let record = ('0' + Number(localStorage.getItem('record'))).slice(-2)
 
 export function updateScore() {
     score++
+    formatScore = ('0' + score).slice(-2)
     console.clear()
     console.log("score: " + score)
 }
@@ -32,11 +34,11 @@ export function getRecord() {
 }
 
 export function htmlScore() {
-    document.getElementById('score').innerHTML = score
+    document.getElementById('score').innerHTML = formatScore
     document.getElementById('record').innerHTML = record
 }
 
 function newRecord() {
     localStorage.setItem('record', score)
-    record = Number(localStorage.getItem('record'))
+    record = ('0' + Number(localStorage.getItem('record'))).slice(-2)
 }
