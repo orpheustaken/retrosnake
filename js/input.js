@@ -1,10 +1,10 @@
-import { vol } from './settings.js'
+import { VOL } from './settings.js'
 
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
-const move = new Audio('/assets/sound/movement.mp3')
-move.volume = vol
+const MOVE = new Audio('./assets/sound/movement.mp3')
+MOVE.volume = VOL
 
 window.addEventListener('keydown', e => {
     switch (e.key) {
@@ -14,7 +14,7 @@ window.addEventListener('keydown', e => {
         case 'ArrowUp':
             if (lastInputDirection.y !== 0) break
             inputDirection = { x: 0, y: -1 }
-            move.play()
+            MOVE.play()
             break
         case 'j':
         case 's':
@@ -22,7 +22,7 @@ window.addEventListener('keydown', e => {
         case 'ArrowDown':
             if (lastInputDirection.y !== 0) break
             inputDirection = { x: 0, y: 1 }
-            move.play()
+            MOVE.play()
             break
         case 'h':
         case 'a':
@@ -30,7 +30,7 @@ window.addEventListener('keydown', e => {
         case 'ArrowLeft':
             if (lastInputDirection.x !== 0) break
             inputDirection = { x: -1, y: 0 }
-            move.play()
+            MOVE.play()
             break
         case 'l':
         case 'd':
@@ -38,7 +38,7 @@ window.addEventListener('keydown', e => {
         case 'ArrowRight':
             if (lastInputDirection.x !== 0) break
             inputDirection = { x: 1, y: 0 }
-            move.play()
+            MOVE.play()
             break
     }
 })

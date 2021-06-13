@@ -1,2 +1,3 @@
-export const vol = 0.5
-export const game_speed = 15
+export const VOL = 0.5
+export const SNAKE_VELOCITY = 15
+export const EXPANSION_RATE = 1

@@ -1,19 +1,20 @@
-import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection } from './snake.js'
+import { VOL, SNAKE_VELOCITY } from './settings.js'
+import { update as updateSnake, draw as drawSnake, getSnakeHead, snakeIntersection } from './snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
-import { vol } from './settings.js'
 import { updateRecord, resetRecord, getRecord, htmlScore } from './score.js'
 
 let lastRenderTime = 0
 let gameOver = false
 
+const DEAD = new Audio('./assets/sound/gameover.mp3')
+DEAD.volume = VOL
+
 const gameBoard = document.getElementById('game-board')
-const dead = new Audio('/assets/sound/gameover.mp3')
-dead.volume = vol
 
 async function main(currentTime) {
     if (gameOver) {
-        dead.play()
+        DEAD.play()
         updateRecord()
         await sleep(500)
         alert("GAME OVER")
@@ -23,14 +24,14 @@ async function main(currentTime) {
             }
         }
         if (confirm('Do you want to play again?')) {
-            window.location = '/'
+            window.location = './'
         }
     return
     }
 
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
-    if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
+    if (secondsSinceLastRender < 1 / SNAKE_VELOCITY) return
     
     lastRenderTime = currentTime
 

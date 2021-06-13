@@ -1,19 +1,18 @@
+import { VOL, EXPANSION_RATE } from './settings.js'
 import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
-import { vol } from './settings.js'
 import { updateScore } from './score.js'
 
-const eat = new Audio('/assets/sound/eat.mp3')
-eat.volume = vol
+const EAT = new Audio('./assets/sound/eat.mp3')
+EAT.volume = VOL
 
 let food = getRandomFoodPosition()
-const EXPANSION_RATE = 1
 
 export function update() {
     if (onSnake(food)) {
         expandSnake(EXPANSION_RATE)
-        eat.load()
-        eat.play()
+        EAT.load()
+        EAT.play()
         food = getRandomFoodPosition()
         updateScore()
     }
