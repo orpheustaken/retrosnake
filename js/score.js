@@ -1,5 +1,5 @@
 let score = 0
-let formatScore = ('0' + 0).slice(-2)
+let formatScore = ('0' + score).slice(-2)
 let record = ('0' + Number(localStorage.getItem('record'))).slice(-2)
 
 export function updateScore() {
@@ -8,9 +8,7 @@ export function updateScore() {
 }
 
 export function updateRecord() {
-    if (score > record) {
-        newRecord()
-    }
+    if (score > record) newRecord()
 }
 
 export function resetRecord() {
