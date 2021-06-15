@@ -1,14 +1,14 @@
+import { encryption, decryption } from './cryptography.js'
+
 let score = 0
-let formatScore = ('0' + score).slice(-2)
-let record = ('0' + Number(localStorage.getItem('record'))).slice(-2)
+let record = recoverRecord()
 
 export function updateScore() {
     score++
-    formatScore = ('0' + score).slice(-2)
 }
 
 export function updateRecord() {
-    if (score > record) newRecord()
+    if (score > record) storeNewRecord()
 }
 
 export function resetRecord() {
@@ -20,11 +20,18 @@ export function getRecord() {
 }
 
 export function htmlScore() {
+    let formatScore = ('00' + score).slice(-3)
+    let formatRecord = ('00' + record).slice(-3)
     document.getElementById('score').innerHTML = formatScore
-    document.getElementById('record').innerHTML = record
+    document.getElementById('record').innerHTML = formatRecord
 }
 
-function newRecord() {
-    localStorage.setItem('record', score)
-    record = ('0' + Number(localStorage.getItem('record'))).slice(-2)
+function storeNewRecord() {
+    localStorage.setItem('record', encryption(score))
+}
+
+function recoverRecord() {
+    let hash = localStorage.getItem('record')
+    let record = (hash == null) ? score : decryption(hash)
+    return record
 }
