@@ -1,4 +1,4 @@
-applySettings()
+applyDefaultSettings()
 
 export const VOL = getSetting('VOL')
 export const SNAKE_VELOCITY = getSetting('SNAKE_VELOCITY') 
@@ -18,11 +18,11 @@ function getSetting(element) {
    }
 }
 
-function applySettings() {
+function applyDefaultSettings() {
     let tmp = localStorage.getItem('Volume')
     if (tmp == null) setDefaults()
 
-    console.log('The new settings are going to be applied once the game is restarted')
+    console.log('Tip: Settings can be changed in Local Storage\nThe new configuration is going to be applied once the game is restarted')
 }
 
 function setDefaults() {
