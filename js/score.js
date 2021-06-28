@@ -12,7 +12,7 @@ export function updateRecord() {
 }
 
 export function resetRecord() {
-    localStorage.removeItem('record')
+    localStorage.removeItem('Record')
 }
 
 export function getRecord() {
@@ -27,11 +27,11 @@ export function htmlScore() {
 }
 
 function storeNewRecord() {
-    localStorage.setItem('record', encryption(score))
+    localStorage.setItem('Record', encryption(score))
 }
 
 function recoverRecord() {
-    let hash = localStorage.getItem('record')
+    let hash = localStorage.getItem('Record')
     let record = (hash == null) ? score : decryption(hash)
     return record
 }
