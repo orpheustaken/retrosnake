@@ -1,7 +1,7 @@
 applySettings()
 
 export const VOL = getSetting('VOL')
-export const SNAKE_VELOCITY =getSetting('SNAKE_VELOCITY') 
+export const SNAKE_VELOCITY = getSetting('SNAKE_VELOCITY') 
 export const EXPANSION_RATE = getSetting('EXPANSION_RATE')
 
 function getSetting(element) {
