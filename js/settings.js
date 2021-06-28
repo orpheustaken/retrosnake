@@ -1,3 +1,32 @@
-export const VOL = 0.5
-export const SNAKE_VELOCITY = 15
-export const EXPANSION_RATE = 1
+applySettings()
+
+export const VOL = getSetting('VOL')
+export const SNAKE_VELOCITY =getSetting('SNAKE_VELOCITY') 
+export const EXPANSION_RATE = getSetting('EXPANSION_RATE')
+
+function getSetting(element) {
+    const setting = {
+        volume: Number(localStorage.getItem('Volume')),
+        snake_velocity: Number(localStorage.getItem('Snake Velocity')),
+        expansion_rate: Number(localStorage.getItem('Expansion Rate')),
+    }
+
+   switch (element) {
+        case 'VOL': return setting.volume
+        case 'SNAKE_VELOCITY': return setting.snake_velocity
+        case 'EXPANSION_RATE': return setting.expansion_rate
+   }
+}
+
+function applySettings() {
+    let tmp = localStorage.getItem('Volume')
+    if (tmp == null) setDefaults()
+
+    console.log('The new settings are going to be applied once the game is restarted')
+}
+
+function setDefaults() {
+    localStorage.setItem('Volume', 1)
+    localStorage.setItem('Snake Velocity', 15)
+    localStorage.setItem('Expansion Rate', 1)
+}
