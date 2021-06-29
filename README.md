@@ -1,4 +1,4 @@
-![logo_retrosnake2](https://user-images.githubusercontent.com/63078965/120733941-957de280-c4d7-11eb-98a4-d0ba1e1a75dc.png)
+![logo_retrosnake_big](https://user-images.githubusercontent.com/63078965/123733534-3b303180-d88b-11eb-9e5f-8d5b42ee7827.png)
 
 ## Gameplay
 This is a minor project, only the arrow keys are necessary to play the game, although it is possible to control the snake with WASD and HJKL (vim key bindings).
