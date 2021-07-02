@@ -6,7 +6,7 @@ This is a minor project, only the arrow keys are necessary to play the game, but
 ## Artwork
 Its logo was designed on Inkscape and inspired by the retro and pixelated style of the old arcades. The background photo was taken by [Ben Neale](https://unsplash.com/@ben_neale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), and can be found on [Unsplash](https://unsplash.com/photos/zpxKdH_xNSI).
 
-Arcade sound effects were are also present to increase the feeling of nostalgia and bring back those memories of simpler times.
+Arcade sound effects are also present to increase the feeling of nostalgia and bring back those memories of simpler times.
 
 ![retro_snake6](https://user-images.githubusercontent.com/63078965/121787445-938de080-cbb5-11eb-90d0-1058e46dd55b.png)
 
