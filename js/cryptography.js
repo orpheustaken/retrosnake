@@ -1,7 +1,7 @@
 export function encryption(input) {
     input += 32
-    let cypher = String.fromCharCode(input)
-    let pubkey = genPseudoHash(20) + cypher + genPseudoHash(14)
+    let cipher = String.fromCharCode(input)
+    let pubkey = genPseudoHash(20) + cipher + genPseudoHash(14)
     return pubkey
 }
 
