@@ -3,7 +3,7 @@
 ## Gameplay
 This is a minor project, only the arrow keys are necessary to play the game, but it is also possible to control the snake with WASD and HJKL (vim key bindings).
 
-A Demo of the game is available to watch [here](https://www.youtube.com/watch?v=rFV9VlCKn4Q).
+A demo of the game is available to watch [here](https://www.youtube.com/watch?v=rFV9VlCKn4Q).
 
 ## Artwork
 Its logo was designed on Inkscape and inspired by the retro and pixelated style of the old arcades. The background photo was taken by [Ben Neale](https://unsplash.com/@ben_neale?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), and can be found on [Unsplash](https://unsplash.com/photos/zpxKdH_xNSI).
