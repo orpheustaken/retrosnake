@@ -27,3 +27,4 @@ There is no server hosting this game, therefore, to play it you need to clone th
 
 ## License
 [GPL-2.0](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html)
+
