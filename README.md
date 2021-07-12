@@ -20,11 +20,10 @@ Dynamic settings were recently implemented and can now be changed from local sto
 * Sound Volume
 
 ## Pseudo-Cryptography
-Although the record is stored in locally, a pseudo implementation of cryptography and randomly generated hash were added to prevent cheating.
+Although the record is stored locally, a pseudo implementation of cryptography and randomly generated hash were added to prevent cheating.
 
 ## Usage and Hosting
-There is no server hosting this game, therefore, to play it you need to clone this repository and host locally.
+There is no server hosting this game yet, therefore, to play it you need to clone this repository and host locally.
 
 ## License
 [GPL-2.0](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html)
-
