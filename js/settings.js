@@ -26,7 +26,7 @@ function applyDefaultSettings() {
 }
 
 function setDefaults() {
-    localStorage.setItem('Volume', 1)
-    localStorage.setItem('Snake Velocity', 15)
+    localStorage.setItem('Volume', 0.1)
+    localStorage.setItem('Snake Velocity', 10)
     localStorage.setItem('Expansion Rate', 1)
 }
