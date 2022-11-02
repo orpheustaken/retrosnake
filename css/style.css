@@ -2,7 +2,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: black;
-    background-image: url('./assets/img/retro.jpg');
+    /* background-image: url('assets/img/retro.jpg'); */
+    background-image: url('https://user-images.githubusercontent.com/63078965/199572424-231f4d85-0af8-41a3-919d-7ecc3b5259a5.jpg');
     font-family: hack;
     color: white;
 }
