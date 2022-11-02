@@ -1,8 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #050505;
-    background-image: url('assets/img/retro.jpg');
+    background-color: black;
+    background-image: url('./assets/img/retro.jpg');
     font-family: hack;
     color: white;
 }
