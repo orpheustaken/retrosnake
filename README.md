@@ -1,4 +1,6 @@
-![logo_retrosnake_big](https://user-images.githubusercontent.com/63078965/123733534-3b303180-d88b-11eb-9e5f-8d5b42ee7827.png)
+<div align="center">
+<img src="https://user-images.githubusercontent.com/63078965/123733534-3b303180-d88b-11eb-9e5f-8d5b42ee7827.png" alt="Logo" height="70"/>
+</div>
 
 ## Gameplay
 This is a minor project, only the arrow keys are necessary to play the game, but it is also possible to control the snake with WASD and HJKL (vim key bindings).
@@ -21,9 +23,6 @@ Dynamic settings were recently implemented and can now be changed from local sto
 
 ## Pseudo-Cryptography
 Although the record is stored locally, a pseudo implementation of cryptography and randomly generated hash were added to prevent cheating.
-
-## Usage and Hosting
-There is no server hosting this game yet, therefore, to play it you need to clone this repository and host locally.
 
 ## License
 [GPL-2.0](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html)
