@@ -7,7 +7,7 @@ import { updateRecord, resetRecord, getRecord, htmlScore } from './score.js'
 let lastRenderTime = 0
 let gameOver = false
 
-const DEAD = new Audio('./assets/sound/gameover.mp3')
+const DEAD = new Audio('src/assets/sound/gameover.mp3')
 DEAD.volume = VOL
 
 const gameBoard = document.getElementById('game-board')

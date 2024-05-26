@@ -3,7 +3,7 @@ import { VOL } from './settings.js'
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
-const MOVE = new Audio('./assets/sound/movement.mp3')
+const MOVE = new Audio('src/assets/sound/movement.mp3')
 MOVE.volume = VOL
 
 window.addEventListener('keydown', e => {

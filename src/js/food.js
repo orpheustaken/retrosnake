@@ -3,7 +3,7 @@ import { onSnake, expandSnake } from './snake.js'
 import { randomGridPosition } from './grid.js'
 import { updateScore } from './score.js'
 
-const EAT = new Audio('./assets/sound/eat.mp3')
+const EAT = new Audio('src/assets/sound/eat.mp3')
 EAT.volume = VOL
 
 let food = getRandomFoodPosition()
